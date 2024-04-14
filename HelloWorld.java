@@ -1,11 +1,17 @@
+import java.util.Scanner;
+
 public class HelloWorld {
 
 public static void main(String[] args)
     {
-	int a = 1;
-	int b = 6;
+	Scanner sc = new Scanner (System.in); // Create Scanner object
+	System.out.println("Enter the first number: ");
 
-	System.out.println(a * b);
+	int FirstNumb = sc.nextInt();
+	System.out.println("Enter the second number: ");
+	int SecondNumb = sc.nextInt();
+
+	System.out.println(FirstNumb * SecondNumb);
     }	    
 }
 
